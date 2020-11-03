@@ -1,8 +1,24 @@
 # Create a new instance of the latest Ubuntu 20.04 on an
 # t3.micro node with an AWS Tag naming it "HelloWorld"
+
+variable "access_key" {
+   type = "string"
+   description = "AWS Access Key"
+ }
+
+variable "secret_key" {
+   type = "string"
+   description = "AWS Secret Key"
+ }
+
+ variable "version_tag" {
+   type = "string"
+   description = "Instance version tag (API update!)"
+ }
+
 provider "aws" {
-  access_key = access_key
-  secret_key = secret_key
+  access_key = var.access_key
+  secret_key = var.secret_key
   region = "us-east-1"
 }
 
@@ -28,6 +44,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "HelloWorld"
-    Version = version_tag # var API test
+    Version = var.version_tag # var API test
   }
 }
