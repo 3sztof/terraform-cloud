@@ -28,6 +28,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "HelloWorld"
-    Version = "1.0" # var API test
+    Version = var.version_tag # var API test
   }
 }
