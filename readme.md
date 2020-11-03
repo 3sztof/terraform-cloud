@@ -1,6 +1,6 @@
 ﻿# Terraform cloud playground 
  
- > [K.Wilczynski](krzysztof.wilczynski@pm.me)
+ > [K.Wilczynski](mailto://krzysztof.wilczynski@pm.me)
  
  ## Idea no. 1
  Testing the possibilities of dynamic integration of Jenkins build with Terraform cloud deployment variables
