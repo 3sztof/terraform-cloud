@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id":"var-y16inZJCxiNatMPz",
+    "attributes": {
+      "key":"version_tag",
+      "value":"3.0",
+      "description":"Updated through API!",
+      "category":"terraform",
+      "hcl": false,
+      "sensitive": false
+    },
+    "type":"vars"
+  }
+}
