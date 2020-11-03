@@ -1,8 +1,8 @@
 # Create a new instance of the latest Ubuntu 20.04 on an
 # t3.micro node with an AWS Tag naming it "HelloWorld"
 provider "aws" {
-  #access_key = var.access_key
-  #secret_key = var.secret_key
+  access_key = var.access_key
+  secret_key = var.secret_key
   region = "us-east-1"
 }
 
